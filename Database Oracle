@@ -1,0 +1,28 @@
+1.Creation of table Tbl_StudentDetails
+	create table TBL_StudentDetails(Stdid varchar(6) constraint Pk Primary key,InstrType varchar(20),
+	Gender char(1) constraint chk check(Gender='F'or Gender='M'),FirstName varchar(20),LastName varchar(20),Dob date,
+	Mothertongue Varchar(20),contact varchar(10),Stdjoindt Date,Grade integer,Occupation varchar(20),
+	OccupationPlace varchar(20),ParentFirstName varchar(25),ParentContact varchar(10),Batchid integer,
+	Address varchar(40));
+
+2.Creation of table Tbl_Batch 	
+	create table Tbl_Batch
+	(
+  	Batchid varchar2(10),
+  	BatchName varchar2(3),
+  	BatchDays varchar2(10),
+  	BatchStartTime TIMESTAMP WITH LOCAL TIME ZONE,
+  	BatchEndTime TIMESTAMP WITH LOCAL TIME ZONE,
+  	constraint btchId_PK primary key(Batchid)
+  	);
+
+3.Creation of table Tbl_Grade
+	create table Tbl_Grade
+	(
+	Gradeid varchar(10)constraint Pk_Grade Primary  Key,
+	GradeName varchar(20),
+	Instrtype varchar(20)
+	)
+
+
+ 
